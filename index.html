@@ -12,7 +12,7 @@
 <body>
     <div id="app">
         <ol>
-            <li>{{emails}}</li>
+            <li v-for="(email, index) in emails" v-if="emails.length === 10">{{email}}</li>
         </ol>
     </div>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
